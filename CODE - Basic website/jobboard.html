@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Drinks Trade</title>
+		<link rel="stylesheet" type="text/css" href="stylejobboard.css">
+		<script type="text/javascript" src="tabs.js"></script>
+	</head>
+	
+<body>
+<!--Flex container resizes body elements with browser size-->
+<div class="flex-container">
+<div id="page">
+ <div id ="logo">
+	<img src="images/logo1.jpg" alt="The Drinks Trade" />
+</div>
+<header>
+<!--Navigation Links and header-->
+<ul id="navigation">
+	<li><a href="home.html">Home</a></li>
+	<li><a href="about.html">About Us</a></li>
+	<li><a href="contact.html">Contact Us</a></li>
+	<li><a href="jobboard.html" class="on">Jobs Board</a></li>
+</ul>
+</header>
+<!--Fullscreen image-->
+<img src="images/1img.jpg" alt="drinks" style="max-width: 100%; height: auto;">
+
+<!--Tabbed information area, click on tab to view info-->
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="active" onclick="openCity(event, 'items')">Items for sale</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'jobs')">Job postings</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'news')">News Updates</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'staff')">Staff Wanted</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'info')">Infomation</a></li>
+</ul>
+
+<div id="items" class="active">
+  <h3>Updated weekly</h3>
+  <p>Will have weekly postings of bar items for sale in local area.</p>
+</div>
+
+<div id="jobs" class="tabcontent">
+  <h3>Updated daily</h3>
+  <p>Where jobs can be posted for local area.</p> 
+</div>
+
+<div id="news" class="tabcontent">
+  <h3>News / Recent developments</h3>
+  <p>News and recent developments will be shown for the industry</p>
+</div>
+
+<div id="staff" class="tabcontent">
+  <h3>Staff wanted</h3>
+  <p>Staff wanted postings</p>
+</div>
+
+<div id="info" class="tabcontent">
+  <h3>Information</h3>
+  <p>Information on section</p>
+</div>
+</div>
+
+<!--Javascript for the tabs interactive features-->
+<script>
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+<!--Footer bar-->
+<footer>
+<div id="socialicons">
+<p><a href="https://www.twitter.com/"><img src="images/twitter.png" width="18" height="18" alt="Twitter" /></a>
+<a href="https://www.facebook.com"><img src="images/facebook2.png" width="18" height="18" alt="Facebook" /></a>
+Copyright "The Drinks Trade" 2017 </p>
+</div> 
+</footer>
+</html>

@@ -1,0 +1,115 @@
+/* General body styling - font and background */
+body { 
+	font-size:80%;
+	font-family: "Arial", monospace;
+	letter-spacing: 0.15em;
+	background-color: #efefef;}
+	
+/* Page overall backgound colour */
+#page { 
+	padding: 0px;
+	background-color: #ffffff;}
+	
+/* Logo position and sizing */
+#logo {
+	width: 200px;
+	height: 200px;
+	margin: 10px auto 25px auto;}
+	
+/* Navigation Links styling */
+ul {
+	width: auto;
+	padding: 15px;
+	margin: 0px auto 0px auto;
+	text-align: center;}
+li { 
+	display: inline;
+	margin: 0px 3px; }
+	
+/* Paragraph styling */
+p { 
+	text-align: center;
+	width: 600px;
+	margin: 20px auto 20px auto;
+	font-weight: normal;}
+	
+/* Navigation text styling */
+a{
+	color: #000000;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 6px 18px 5px 18px;}
+a:hover, a.on { 
+	color: #ffffff;
+	background-color: #ffffff:}
+	
+/* Cointainer styling - Makes the website move with browser */
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+/* Header and footer bar - Colouring and sizing */
+header {
+	background: #d6792c;
+	color:white;
+	}
+footer {
+	background: #aaa;
+	color:white;
+	}
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: center;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #d6792c;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.active { 
+	Padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+	}

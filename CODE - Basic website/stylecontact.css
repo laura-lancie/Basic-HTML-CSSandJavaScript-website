@@ -1,0 +1,231 @@
+/* General body styling - font and background */
+body { 
+	font-size:80%;
+	font-family: "Arial", monospace;
+	letter-spacing: 0.15em;
+	background-color: #efefef;}
+	
+/* Page overall backgound colour */
+#page { 
+	padding: 0px;
+	background-color: #ffffff;}
+	
+/* Logo position and sizing */
+#logo {
+	width: 200px;
+	height: 200px;
+	margin: 10px auto 25px auto;}
+	
+/* Navigation Links styling */
+ul {
+	width: 900px;
+	padding: 8px;
+	margin: 0px auto 0px auto;
+	text-align: center;}
+li { 
+	display: inline;
+	margin: 0px 3px; }
+	
+/* Paragraph styling */
+p { 
+	text-align: center;
+	width: 600px;
+	margin: 20px auto 20px auto;
+	font-weight: normal;}
+	
+/* Navigation text styling */
+a{
+	color: #000000;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 6px 18px 5px 18px;}
+a:hover, a.on { 
+	color: #ffffff;
+	background-color: #ffffff:}
+	
+/* Cointainer styling - Makes the website move with browser */
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.flex-container > * {
+    padding: 8px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+/* Header and footer bar - Colouring and sizing */
+.article {
+    text-align: center;
+}
+header {
+	background: #d6792c;
+	color:white;
+	}
+footer {
+	background: #aaa;
+	color:white; 
+	padding: 8px;
+	}
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+
+/* Contact form styling */
+
+body {
+	font-family:"Open Sans", Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height: 30px;
+	font-color: #000000;
+	background:#ffffff;
+}
+
+.container {
+	max-width: 450px;
+	width:100%;
+	margin: 25px;
+	position: relative;
+	border-style: solid;
+	border-size: 2px;
+	border-color: #8b8f8f;
+	float: left;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#ffffff;
+	padding:35px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #d6792c;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+	text-color: #000000;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#d6792c;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#8b8f8f;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+/* Imbedded map styling */
+.mapbox { 
+	margin: 125px;
+	position: relative;
+	float: right;
+	bottom: 980px;
+	left: 60px;
+}
+/* Clears positioning from above contact form and map elements */
+.clearfix{
+    clear:both
+}
+.contactinfo { 
+	margin: 125px;
+	position: relative;
+	float: right;
+	bottom: 950px;
+	left: 60px;
+	text-align: right;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

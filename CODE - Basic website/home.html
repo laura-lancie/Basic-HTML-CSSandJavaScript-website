@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Drinks Trade</title>
+		<link rel="stylesheet" type="text/css" href="stylehome.css">
+	</head>
+	
+<body>
+<!--Flex container resizes body elements with browser size-->
+<div class="flex-container">
+<div id="page">
+ <div id ="logo">
+	<img src="images/logo1.jpg" alt="The Drinks Trade" />
+</div>
+<header>
+<!--Navigation Links and header-->
+<ul id="navigation">
+	<li><a href="home.html" class="on">Home</a></li>
+	<li><a href="about.html">About Us</a></li>
+	<li><a href="contact.html">Contact Us</a></li>
+	<li><a href="jobboard.html">Jobs Board</a></li>
+</ul>
+</header>
+<!--Image slider layout-->
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="images/2img.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="images/1img.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="images/3img.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<!--Javascript for the image slider, makes interactive -->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 6000); // Change image every 6 seconds
+}
+</script>
+
+<p>
+Welcome to our site!
+</p>
+
+<!--Main paragraph layout-->
+<article class="article">
+  <h1>A breif introduction...</h1>
+  <p>The Drinks Trade is a local business which is centered / based in the North East ran by Mark and Elaine. We cover all aspects of the licensed 
+  trade for pubs, restaurants, hotels and bars. We intend on developing this business over time into recruitment, buying and selling, services leanding themsleves to the industry,
+  brand advertising and consultancy. </p>
+  <p>We hope to help develop local nightlife and the drinks trade through these various functions and this website will be a hub for all The Drinks Trade activity.</p>
+</article>
+
+</div>
+
+</body>
+<!--Footer bar-->
+<footer>
+<div id="socialicons">
+<p><a href="https://www.twitter.com/"><img src="images/twitter.png" width="18" height="18" alt="Twitter" /></a>
+<a href="https://www.facebook.com"><img src="images/facebook2.png" width="18" height="18" alt="Facebook" /></a>
+Copyright "The Drinks Trade" 2017 </p>
+</div> 
+</footer>
+</html>

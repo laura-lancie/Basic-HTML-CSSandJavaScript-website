@@ -1,0 +1,159 @@
+/* General body styling - font and background */
+body { 
+	font-size:80%;
+	font-family: "Arial", monospace;
+	letter-spacing: 0.15em;
+	background-color: #efefef;}
+	
+/* Page overall backgound colour */
+#page { 
+	padding: 0px;
+	background-color: #ffffff;}
+	
+/* Logo position and sizing */
+#logo {
+	width: 200px;
+	height: 200px;
+	margin: 10px auto 25px auto;}
+	
+/* Navigation Links styling */
+ul {
+	width: 900px;
+	padding: 15px;
+	margin: 0px auto 0px auto;
+	text-align: center;}
+li { 
+	display: inline;
+	margin: 0px 3px; }
+	
+/* Paragraph styling */
+p { 
+	text-align: center;
+	width: 600px;
+	margin: 20px auto 20px auto;
+	font-weight: normal;}
+	
+/* Navigation text styling */
+a{
+	color: #000000;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 6px 18px 5px 18px;}
+a:hover, a.on { 
+	color: #ffffff;
+	background-color: #ffffff:}
+	
+/* Cointainer styling - Makes the website move with browser */
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+/* Header and footer bar - Colouring and sizing */
+.article {
+    text-align: center;
+}
+header {
+	background: #d6792c;
+	color:white;
+	}
+footer {
+	background: #aaa; 
+	color:white; 
+	padding: 8px;
+	}
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+
+/* Image gallery Styling */
+
+* {margin: 0; padding: 0;}
+ 
+body {
+	<!-- src: http://subtlepatterns.com/?p=1045 -->
+	background: #ffffff;
+}
+ 
+#container2 {
+	width: 1000px;
+	overflow: hidden;
+	margin: 0px auto;
+	background: white;
+}
+/*photobanner*/
+ 
+.photobanner {
+	height: 233px;
+	width: 3550px;
+	margin-bottom: 80px;
+}
+
+/*keyframe animations*/
+.first {
+	-webkit-animation: bannermove 30s linear infinite;
+	   -moz-animation: bannermove 30s linear infinite;
+	    -ms-animation: bannermove 30s linear infinite;
+	     -o-animation: bannermove 30s linear infinite;
+	        animation: bannermove 30s linear infinite;
+}
+ 
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+ 
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
